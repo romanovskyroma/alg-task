@@ -32,7 +32,6 @@ function countTransf(natNum) {
     let countTransf = [];
     natNum = String(natNum);
     for (let i = 0; i < natNum.length; i++) {
-        // console.log(natNum[i]);
         if (natNum[i] != '0' && natNum[i] != '5') {
             countTransf.push(natNum[i])
         }
