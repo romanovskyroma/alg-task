@@ -67,3 +67,9 @@ const mult5 = multMemb(5);
 console.log(mult5);
 const mult10 = multMemb(10);
 console.log(mult10);
+
+module.exports = {
+    mark,
+    countTransf,
+    multMemb
+}
