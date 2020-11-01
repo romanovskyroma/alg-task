@@ -3,6 +3,9 @@
 const arrMarks1 = [10, 8, 6, 9, 10, 3, 5, 7];
 const arrMarks2 = [10, 8, 6, 9, 0, 3, 5, 7];
 
+function load(){ аlert('Hello!'); } 
+window.onload = load; 
+
 function mark(arrMarks) {
     console.log(arrMarks);
     const min = arrMarks.indexOf(Math.min(...arrMarks));
