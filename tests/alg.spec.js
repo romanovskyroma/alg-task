@@ -44,6 +44,12 @@ describe('MultMemb function', () => {
         }
     )
     test(
+        'should be called with natural number',
+        () => {
+            expect(payload).toBeGreaterThanOrEqual(0);
+        }
+    )
+    test(
         'should return result',
         () => {
             expect(result).toBeTruthy();
@@ -73,6 +79,12 @@ describe('MultMemb function', () => {
         () => {
             expect(countTransfMock).toHaveBeenCalledTimes(1);
             expect(countTransfMock).toHaveBeenCalledWith(payload);
+        }
+    )
+    test(
+        'should be called with natural number',
+        () => {
+            expect(payload).toBeGreaterThanOrEqual(0);
         }
     )
     test(
