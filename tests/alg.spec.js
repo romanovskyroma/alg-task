@@ -12,6 +12,12 @@ describe('Mark function', () => {
         }
     )
     test(
+        'should be called with array of natural numbers',
+        () => {
+            payload.forEach(item => expect(item).toBeGreaterThanOrEqual(0));
+        }
+    )
+    test(
         'should return result',
         () => {
             expect(result).toBeTruthy();
@@ -70,7 +76,7 @@ describe('MultMemb function', () => {
     )
 })
 
-describe('MultMemb function', () => {
+describe('countTransf function', () => {
     const countTransfMock = jest.spyOn(alg, "countTransf");
     const payload = 5005510055;
     const result = countTransfMock(payload);
